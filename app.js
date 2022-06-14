@@ -3,7 +3,13 @@ const btn =  document.querySelector('.btn');
 const rickroll = document.querySelector('.rickroll');
 
 tl
-    .to('.intro-img', {y: "0%" , duration: 2} )
+    .to('.intro-img', {
+        keyframes: [
+            {y:0, duration: 1.2},
+            {y:0, duration: .5}
+        ]
+    })
+
     .to('.intro-overlay', {y: "-100%", duration: 1})
     .to('.intro', {y: "-100%", duration: 1}, "-=.8")
 
