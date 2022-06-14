@@ -66,6 +66,18 @@
     opacity: 0.6;
 }
 
+.rickroll {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-position: center;
+    object-fit: cover;
+    z-index: -100;
+}
+
 .overlay {
     position: absolute;
     width: 100%;
@@ -79,16 +91,16 @@
 .text {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 10;
-    padding:  2rem 5rem;
+    padding: 1rem;
     background-color: black;
 
 }
 
 .text h2 {
-    align-self: flex-start;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.5rem;
@@ -98,23 +110,42 @@
 }
 
 
-@media screen and (min-width: 38.125em) {
+.btn {
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 47.125em) {
+    .text {
+        width: 70%;
+    }
+    .btn {
+        font-size: 2rem;
+    }
     .text h2 {
-        font-size: 3.2rem;
+        font-size: 2rem;
         letter-spacing: .5rem;
     }
 }
 
 @media screen and (min-width: 57.125em) {
     .text {
-        width: 70%;
         padding: 1rem;
+
     }
     .text h2 {
-        font-size: 5rem;
+        font-size: 3rem;
         letter-spacing: 1rem;
     }
+    .btn {
+        font-size: 2rem;
+    }
 }
+
 
 
 
