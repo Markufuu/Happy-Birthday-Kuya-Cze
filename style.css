@@ -36,7 +36,7 @@
 
 .toggle {
     position: relative;
-    background-image: url(/media/menu.png);
+    background-image: url(media/menu.png);
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
@@ -46,7 +46,7 @@
 
 .toggle.active {
     position: relative;
-    background-image: url(/media/close.png);
+    background-image: url(media/close.png);
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
