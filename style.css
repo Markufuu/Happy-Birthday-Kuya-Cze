@@ -155,8 +155,16 @@
 }
 
 .intro-img {
-    width: 30rem;
+    width: 20rem;
     transform: translateY(100%);
+}
+
+@media screen and (min-width: 57.125em) {
+    .intro-img {
+        width: 30rem;
+        transform: translateY(100%);
+    }
+    
 }
 
 
